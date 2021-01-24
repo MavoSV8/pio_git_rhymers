@@ -76,3 +76,4 @@ public class RhymersJUnitTest {
     }
 
 }
+//ALT + strzałka w lewo/w prawo przełacza miedzy otwartymi plikami w IDE

@@ -5,6 +5,9 @@ import edu.kis.vh.nursery.factory.Rhymersfactory;
 
 class RhymersDemo {
 
+    public static final String TOTAL_REJECTED = "total rejected is ";
+    public static final String TWO_SPACES = "  ";
+
     public static void main(String[] args) {
         Rhymersfactory factory = new DefaultRhymersFactory();
 
@@ -21,11 +24,11 @@ class RhymersDemo {
 
         for (int i = 0; i < rhymers.length; i++) {
             while (!rhymers[i].callCheck())
-                System.out.print(rhymers[i].countOut() + "  ");
+                System.out.print(rhymers[i].countOut() + TWO_SPACES);
             System.out.println();
         }
 
-        System.out.println("total rejected is "
+        System.out.println(TOTAL_REJECTED
                 + ((HanoiRhymer) rhymers[3]).reportRejected());
 
     }
